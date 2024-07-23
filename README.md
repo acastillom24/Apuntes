@@ -312,3 +312,47 @@ ffmpeg -i input.mp4 -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k -vf "fp
 - `-metadata:s:a:0 language=fra`: Establece los metadatos de idioma para la primera pista de audio (s:a:0) a francés (fra).
 
 - `output.mp4`: Especifica el nombre del archivo de salida.
+
+# [kaggle](https://www.kaggle.com/docs/api)
+
+## Crear un token de API
+
+- Una vez que hayas iniciado sesión, ve a tu perfil (haz clic en tu avatar en la esquina superior derecha y selecciona "My Account" o "Mi Cuenta").
+
+- En la sección "API", haz clic en "Create New API Token". Esto descargará un archivo `kaggle.json` que contiene tus credenciales de API.
+
+## Instalar la API de Kaggle
+
+```bash
+python -m pip install kaggle
+```
+
+## Configurar la API de Kaggle
+
+- Crea una carpeta `.kaggle` en tu directorio de usuario si no la crea la instalación:
+
+```bash
+mkdir %HOMEPATH%\.kaggle
+```
+
+- Mueve el archivo `kaggle.json` a la carpeta `.kaggle`:
+
+- Mueve el archivo `kaggle.json` manualmente a la carpeta `C:\Users\{tu-usuario}\.kaggle\`
+
+- Verificar la configuración
+
+```bash
+kaggle datasets list
+```
+
+## Descargar los datos de una competición
+
+```bash
+kaggle competitions download -c {name-competition}
+```
+
+## Submit Prediction
+
+```bash
+kaggle competitions submit -c {name-competition} -f {submission.csv} -m {"Message"}
+```
