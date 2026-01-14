@@ -1,21 +1,35 @@
 # [Git](https://git-scm.com/)
 
+## Git Add
+
+Conecta tu repositorio local con el remoto:
+
+```bash
+git remote add origin <https://github.com/tu-usuario/nombre-del-repositorio.git>
+```
+
 ## Git clone
 
 Descargar el código fuente desde un repositorio remoto:
 
 ```bash
-git clone <https://link-con-nombre-del-repositorio>
+git clone <https://github.com/usuario/nombre-del-repositorio.git>
 ```
 
 ## Git branch
 
-Para trabajar con ramas: crearlas, listarlas y eliminarlas.
+Para trabajar con ramas: crearlas, renombrarlas, listarlas y eliminarlas.
 
 ### Crear una nueva rama
 
 ```bash
-git branch <nombre-de-la-rama>
+git branch -M <nombre-de-la-rama>
+```
+
+### Renombrar una rama
+
+```bash
+git branch -M <antigua-rama> <nueva-rama>
 ```
 
 ### Visualización de ramas
