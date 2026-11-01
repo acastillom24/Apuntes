@@ -2,7 +2,7 @@
 
 Notas personales de comandos y herramientas (Git, Winget, Pandoc, ffmpeg, Kaggle...).
 
-📖 **Léelas aquí:** https://acastillom24.github.io/Apuntes/
+📖 **Léelas aquí:** <https://acastillom24.github.io/Apuntes/>
 
 ## Cómo añadir una nota
 
@@ -12,9 +12,10 @@ Notas personales de comandos y herramientas (Git, Winget, Pandoc, ffmpeg, Kaggle
 
 ## Ver el sitio en local
 
+Requiere [uv](https://docs.astral.sh/uv/) (`winget install astral-sh.uv`).
+
 ```bash
-python -m venv .venv
-.venv\Scripts\activate        # Windows (en Linux/macOS: source .venv/bin/activate)
-pip install -r requirements.txt
-mkdocs serve                  # abre http://127.0.0.1:8000
+uv run mkdocs serve           # instala dependencias y abre http://127.0.0.1:8000
 ```
+
+Para añadir o actualizar dependencias usa `uv add <paquete>` o `uv lock --upgrade`.
