@@ -1,7 +1,7 @@
 site_name: Apuntes
-site_url: https://acastillom24.github.io/apuntes/
-repo_url: https://github.com/acastillom24/apuntes
-repo_name: acastillom24/apuntes
+site_url: https://acastillom24.github.io/Apuntes/
+repo_url: https://github.com/acastillom24/Apuntes
+repo_name: acastillom24/Apuntes
 edit_uri: edit/main/docs/
 
 theme:

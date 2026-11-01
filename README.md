@@ -2,7 +2,7 @@
 
 Notas personales de comandos y herramientas (Git, Winget, Pandoc, ffmpeg, Kaggle...).
 
-📖 **Léelas aquí:** https://acastillom24.github.io/apuntes/
+📖 **Léelas aquí:** https://acastillom24.github.io/Apuntes/
 
 ## Cómo añadir una nota
 
